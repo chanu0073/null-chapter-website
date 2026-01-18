@@ -25,6 +25,8 @@ const Navbar = () => {
   const isActive = (path) => {
     if (path === 'Home' && location.pathname === '/' && !location.hash) return true;
     if (path === 'About' && location.pathname === '/about') return true;
+    if (path === 'Events' && location.pathname === '/events') return true;
+    if (path === 'Team' && location.pathname === '/team') return true;
     if (location.hash === `#${path.toLowerCase().replace(' ', '-')}`) return true;
     return false;
   };
@@ -43,6 +45,8 @@ const Navbar = () => {
             let toPath = "/";
             if (link === 'Home') toPath = "/";
             else if (link === 'About') toPath = "/about";
+            else if (link === 'Events') toPath = "/events";
+            else if (link === 'Team') toPath = "/team";
             else toPath = `/#${link.toLowerCase().replace(' ', '-')}`;
 
             return (

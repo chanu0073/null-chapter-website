@@ -100,3 +100,119 @@
     font-style: italic;
     font-size: 1.2rem;
 }
+
+/* --- New Styles for Year Selection --- */
+
+.section-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.section-title {
+    margin-bottom: 10px;
+    /* Reduced margin since button might be below */
+}
+
+.back-to-current-btn {
+    background: transparent;
+    border: none;
+    color: var(--color-cyan);
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    cursor: pointer;
+    margin-top: 10px;
+    border-bottom: 1px dashed var(--color-cyan);
+    transition: all 0.3s ease;
+}
+
+.back-to-current-btn:hover {
+    color: #fff;
+    border-bottom-style: solid;
+}
+
+.event-type-badge {
+    display: inline-block;
+    background: rgba(79, 163, 255, 0.1);
+    color: var(--color-blue);
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-family: var(--font-heading);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    border: 1px solid rgba(79, 163, 255, 0.2);
+}
+
+/* Past Years Section */
+.past-years-section {
+    margin-top: 80px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding-top: 40px;
+    width: 90%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.past-years-title {
+    font-size: 1.2rem;
+    color: var(--color-text-secondary);
+    margin-bottom: 20px;
+    font-family: var(--font-heading);
+    letter-spacing: 1px;
+}
+
+.past-years-list {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.year-btn {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: var(--color-text-secondary);
+    padding: 8px 16px;
+    font-family: var(--font-heading);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 2px;
+}
+
+.year-btn:hover {
+    border-color: var(--color-cyan);
+    color: var(--color-cyan);
+}
+
+.year-btn.active {
+    background: rgba(0, 255, 255, 0.1);
+    border-color: var(--color-cyan);
+    color: var(--color-cyan);
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+}
+
+/* Split Section Styles */
+.split-events-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.sub-section-title {
+    color: var(--color-cyan);
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: var(--font-heading);
+    border-bottom: 1px solid rgba(0, 255, 255, 0.2);
+    display: inline-block;
+    padding-bottom: 10px;
+}

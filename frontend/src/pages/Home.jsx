@@ -22,9 +22,9 @@ const Home = () => {
     <main>
       <Hero />
       <Stats />
-      <Events />
+      <Events isPreview={true} />
       <News />
-      <Team />
+      <Team isPreview={true} />
     </main>
   );
 };

@@ -91,3 +91,120 @@
     color: #fff;
     box-shadow: 0 0 15px rgba(155, 92, 255, 0.5);
 }
+
+/* --- New Styles for Year Selection (Consistent with Events) --- */
+
+.section-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.section-title {
+    margin-bottom: 10px;
+}
+
+.back-to-current-btn {
+    background: transparent;
+    border: none;
+    color: var(--color-cyan);
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    cursor: pointer;
+    margin-top: 10px;
+    border-bottom: 1px dashed var(--color-cyan);
+    transition: all 0.3s ease;
+}
+
+.back-to-current-btn:hover {
+    color: #fff;
+    border-bottom-style: solid;
+}
+
+/* Past Years Section */
+.past-years-section {
+    margin-top: 80px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding-top: 40px;
+    width: 90%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.past-years-title {
+    font-size: 1.2rem;
+    color: var(--color-text-secondary);
+    margin-bottom: 20px;
+    font-family: var(--font-heading);
+    letter-spacing: 1px;
+}
+
+.past-years-list {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.year-btn {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: var(--color-text-secondary);
+    padding: 8px 16px;
+    font-family: var(--font-heading);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 2px;
+}
+
+.year-btn:hover {
+    border-color: var(--color-cyan);
+    color: var(--color-cyan);
+}
+
+.year-btn.active {
+    background: rgba(0, 255, 255, 0.1);
+    border-color: var(--color-cyan);
+    color: var(--color-cyan);
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+}
+
+/* Team Groups */
+.team-groups-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    width: 100%;
+    align-items: center;
+}
+
+.team-group {
+    width: 100%;
+}
+
+.team-group-title {
+    color: var(--color-cyan);
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    font-family: var(--font-heading);
+    letter-spacing: 2px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 15px;
+}
+
+.team-group-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: var(--color-cyan);
+    box-shadow: 0 0 10px var(--color-cyan);
+}
